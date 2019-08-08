@@ -40,7 +40,10 @@ How to run the attack:
 > **_Question :_** What options did you have to modify in the hostapd-wpe configuration file in order to make the attack work ?
 > 
 > **_Answer:_** 
-
+The options were in the "hostapd-wpe.conf"
+We first had to change the interface so it would use our local interface and kill all process who were using it.
+Then we changed the ssid to :   HEIG-SNU
+Then we launch the application with : sudo ./hostapd-wpe hostapd-wpe.conf
 ---
 
 > **_Question:_** What type of hash did you capture ?
