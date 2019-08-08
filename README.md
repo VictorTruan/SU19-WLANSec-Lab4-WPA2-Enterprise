@@ -1,4 +1,4 @@
-# Wireless Networks and Security
+﻿# Wireless Networks and Security
 
 ## WPA2 Enterprise Security
 
@@ -36,6 +36,7 @@ How to run the attack:
 - Use a brute-forcing tool (```john```, ```asleap```, etc.) to attack the captured hash (use a simple password to minimise time).
 
 ### Answer the following questions :
+Member of the group :  Edin Mujkanovic, Taesuk Joung, Victor Truan
 
 > **_Question :_** What options did you have to modify in the hostapd-wpe configuration file in order to make the attack work ?
 > 
@@ -49,12 +50,25 @@ Then we launch the application with : sudo ./hostapd-wpe hostapd-wpe.conf
 > **_Question:_** What type of hash did you capture ?
 > 
 > **_Answer:_** 
+The hash was in « netntlm » format
+![Intercepted Hash](./Images/challenge.jpeg)
+
+We cracked it with « hashcat » and the result was :
+![Result of the crack](./Images/Hash_Break.png)
 
 ---
 
 > **_Question:_** Which authentication methods are supported by hostapd-wpe ?
 > 
 > **_Réponse:_**
+We found the supported methods inside the configuration file.
+This is the full list :
+1. EAP-FAST/MSCHAPv2
+2. PEAP/MSCHAPv2
+3. EAP-TTLS/MSCHAPv2
+4. EAP-TTLS/MSCHAP
+5. EAP-TTLS/CHAP
+6. EAP-TTLS/PAP
 
 
 ## In case of problems...
