@@ -1,5 +1,5 @@
 ﻿# Wireless Networks and Security
-
+## Authors : Taesuk Joung, Victor Truan and Edin Mujkanovic
 ## WPA2 Enterprise Security
 
 __Korean/Swiss hybrid teams are highly encouraged__
@@ -42,9 +42,9 @@ Member of the group :  Edin Mujkanovic, Taesuk Joung, Victor Truan
 > 
 > **_Answer:_** 
 The options were in the "hostapd-wpe.conf"
-We first had to change the interface so it would use our local interface and kill all process who were using it.
-Then we changed the ssid to :   HEIG-SNU
-Then we launch the application with : sudo ./hostapd-wpe hostapd-wpe.conf
+We first had to change the interface so it would use our local interface and kill all the processes using it.
+Then we changed the SSID name to :   HEIG-SNU .
+Then we launched the application with : sudo ./hostapd-wpe hostapd-wpe.conf.
 ---
 
 > **_Question:_** What type of hash did you capture ?
